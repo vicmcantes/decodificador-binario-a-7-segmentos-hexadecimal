@@ -17,7 +17,7 @@ module tt_um_CodHex7seg (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-    CodHex7seg # cod(.h(ui_in[3:0]) , .S(uo_out[6:0]));
+    CodHex7seg cod (.h(ui_in[3:0]) , .S(uo_out[6:0]));
     
     assign uio_oe = 8'00000000;
     assign uio_out = 8'b00000000;
