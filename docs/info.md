@@ -23,7 +23,7 @@ Para comprobar el funcionamiento, es bastante simple, a la entrada se conecta un
 
 ## External hardware
 
-Un DIP Switch de 4 posiciones para la entrada, para formar el numero de 4 bits binario, junto con su debida alimentación, y un display de 7 segmentos (ánodo común), para visualizar su funcionamiento. 
+Un DIP Switch de 4 posiciones para la entrada, para formar el numero de 4 bits binario, junto con su debida alimentación, y un display de 7 segmentos (ánodo común), para visualizar su funcionamiento. A todo esto se suma un protoboard para colocar estos componentes.
 
 ![SWI-18-3](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/8f7e9bb3-00ba-4079-8a8b-cec0ac8dd407)
 
