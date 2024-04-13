@@ -18,45 +18,46 @@ In the simulation shown in Figure 2, we can see that given a binary number that 
 ![Simu](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/149fd13c-fc7e-4d7d-ad5e-c58ad6342ed7)
 
 According to Figure 3, the connections of the proposed circuit to those of the project in general are detailed below.
-1. For the input, which is a 4-bit vector, the overall project pins connected to the proposed circuit are as follows:
+1. For the input, which is a 4-bit vector "h", the overall project pins connected to the proposed circuit are as follows:
    
-  ui[0]: "Bit 0"
+  in[0]: "h[0]" //Bit 0
   
-  ui[1]: "Bit 1"
+  in[1]: "h[1]" //Bit 1
   
-  ui[2]: "Bit 2"
+  in[2]: "h[2]" //Bit 2
   
-  ui[3]: "Bit 3"
+  in[3]: "h[3]" //Bit 3
   
-  ui[4]: "no use"
+  in[4]: "no use"
   
-  ui[5]: "no use"
+  in[5]: "no use"
   
-  ui[6]: "no use"
+  in[6]: "no use"
   
-  ui[7]: "no use"
+  in[7]: "no use"
 
-2. For the output, which is a 7-bit vector, the overall project pins connected to the proposed circuit are as follows:
+2. For the output, which is a 7-bit vector "S", the overall project pins connected to the proposed circuit are as follows:
 
-  uo[0]: "Segmento g"
+  out[0]: "S[0]" //Segmento g
   
-  uo[1]: "Segmento f"
+  out[1]: "S[1]" //Segmento f
   
-  uo[2]: "Segmento e"
+  out[2]: "S[2]" //Segmento e
   
-  uo[3]: "Segmento d"
+  out[3]: "S[3]" //Segmento d
   
-  uo[4]: "Segmento c"
+  out[4]: "S[4]" //Segmento c
   
-  uo[5]: "Segmento b"
+  out[5]: "S[5]" //Segmento b
   
-  uo[6]: "Segmento a"
+  out[6]: "S[6]" //Segmento a
   
-  uo[7]: "no use"
+  out[7]: "no use"
 
 The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
 
-![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/cceec450-c637-4903-a580-154c91d32af9)
+![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/99a0adce-a2cd-41c7-8f24-7b161d8f71af)
+
 
 ## How to test
 
