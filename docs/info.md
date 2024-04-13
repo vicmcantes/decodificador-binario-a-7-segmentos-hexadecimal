@@ -9,21 +9,48 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-El funcionamiento es bastante sencillo, al introducir un numero en binario de 4 bits, la salida que le corresponde, es ese numero ahora en hexadecimal que se muestra en un display de 7 segmentos de anodo común. La entrada h, es un vector de 4 bits, y la salida S, es un vector de 7 bits. Para la salida S, el bit mas significativo corresponde al segmento a, y asi sucesivamente, hasta el bit menos significativo que corresponde al segmento g. Como es ánodo común, para indicar que esta encendido un segmento, se indica con un "0".
+The operation is quite simple; when entering a 4-bit binary number, this number is shown at the output on a 7-segment common anode display in hexadecimal. The input "h" is a 4-bit vector, and the output "S" is a 7-bit vector. For the output "S", the most significant bit corresponds to segment "a", and so on, until the least significant bit, which corresponds to segment "g", as shown in figure 1. Since the display is anode common, to indicate that a segment is on, it is indicated with a "0".
 
 ![display](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/2a957009-3e5c-467f-bb9b-59fced5c5660)
 
-En la simulación podemos observar como cada valor que introducimos en la entrada, le corresponde una combinacion de salida que permite mostrar ese numero en el display de 7 segmentos de forma hexadecimal, es decir, hasta "F" que en decimal corresponde a 15.
+In the simulation shown in Figure 2, we can see that given a binary number that we introduce at the input, an output combination corresponds to the value to be shown on the 7-segment display in hexadecimal form, that is, given The binary number at the input corresponds to a 7-bit binary number, which is actually a pattern to light each segment of the 7-segment display, which obviously corresponds to the input number to be displayed.
 
 ![Simu](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/149fd13c-fc7e-4d7d-ad5e-c58ad6342ed7)
 
+According to Figure 3, the connections of the proposed circuit to those of the project in general are detailed below.
+1. For the input, which is a 4-bit vector, the overall project pins connected to the proposed circuit are as follows:
+   
+  ui[0]: "Bit 0"
+  ui[1]: "Bit 1"
+  ui[2]: "Bit 2"
+  ui[3]: "Bit 3"
+  ui[4]: "no use"
+  ui[5]: "no use"
+  ui[6]: "no use"
+  ui[7]: "no use""
+
+2. For the output, which is a 7-bit vector, the overall project pins connected to the proposed circuit are as follows:
+
+  uo[0]: "Segmento g"
+  uo[1]: "Segmento f"
+  uo[2]: "Segmento e"
+  uo[3]: "Segmento d"
+  uo[4]: "Segmento c"
+  uo[5]: "Segmento b"
+  uo[6]: "Segmento a"
+  uo[7]: "no use"
+
+The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
+
+![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/6781ae79-d6f1-4017-b3b2-6c8bffa4a60c)
+
 ## How to test
 
-Para comprobar el funcionamiento, es bastante simple, a la entrada se conecta un dip switch de 4 posiciones, conectados a una alimentación adecuada para el sistema, de acuerdo al número que se desee mostrar en el display, y de esta forma, indicar el número en binario, es decir, conectando apropiadamente cada interruptor a su correspondiente bit que representa, por ejemplo, para el bit menos significativo, indicarlo en el primer interruptor a la derecha, hasta el bit más significativo, en el último interruptor a la izquierda. Para la salida es conveniente conectar un display de 7 segmentos (ánodo común) para corroborar su funcionamiento, de acuerdo a los pines que correspondan a cada segmento, que se pueden observar en el código mas a detalle, y que además se menciona de manera concisa en el apartado anterior. 
+To check the operation, a 4-position dip switch is connected to the input, connected to a suitable power supply for the system, with its respective precautions (resistances), according to the number that you want to show on the display, for which appropriately connect each switch to the corresponding bit it represents. For the output, it is convenient to connect a 7-segment display (common anode) to corroborate its operation, according to the pins that correspond to each segment, mentioned in the previous section.
 
 ## External hardware
 
-Un DIP Switch de 4 posiciones para la entrada, para formar el numero de 4 bits binario, junto con su debida alimentación, y un display de 7 segmentos (ánodo común), para visualizar su funcionamiento. A todo esto se suma un protoboard para colocar estos componentes.
+A 4-position DIP Switch for the input, which will serve to form the 4-bit binary number, along with its proper power supply, and a 7-segment display (common anode), to visualize its operation, connected with due precautions to avoid damage. Added to all this is a breadboard to place these components.
 
 ![SWI-18-3](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/8f7e9bb3-00ba-4079-8a8b-cec0ac8dd407)
 
