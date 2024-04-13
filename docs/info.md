@@ -31,18 +31,27 @@ According to Figure 3, the connections of the proposed circuit to those of the p
   ui[4]: "no use"
   
   ui[5]: "no use"
+  
   ui[6]: "no use"
-  ui[7]: "no use""
+  
+  ui[7]: "no use"
 
 2. For the output, which is a 7-bit vector, the overall project pins connected to the proposed circuit are as follows:
 
   uo[0]: "Segmento g"
+  
   uo[1]: "Segmento f"
+  
   uo[2]: "Segmento e"
+  
   uo[3]: "Segmento d"
+  
   uo[4]: "Segmento c"
+  
   uo[5]: "Segmento b"
+  
   uo[6]: "Segmento a"
+  
   uo[7]: "no use"
 
 The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
@@ -62,3 +71,6 @@ A 4-position DIP Switch for the input, which will serve to form the 4-bit binary
 ![AR1112-KPS1203D-Fuente-de-Alimentacion-120V-3A-V8](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/fbd71bf7-a1f9-430b-b7fa-0b36cef450b8)
 
 ![Displaysa](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/d4a507b2-7fe7-4070-b70c-3ea46773daba)
+
+![image](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/bbcf537b-4248-403d-90aa-4d02150d95c4)
+
