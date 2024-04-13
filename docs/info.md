@@ -21,10 +21,15 @@ According to Figure 3, the connections of the proposed circuit to those of the p
 1. For the input, which is a 4-bit vector, the overall project pins connected to the proposed circuit are as follows:
    
   ui[0]: "Bit 0"
+  
   ui[1]: "Bit 1"
+  
   ui[2]: "Bit 2"
+  
   ui[3]: "Bit 3"
+  
   ui[4]: "no use"
+  
   ui[5]: "no use"
   ui[6]: "no use"
   ui[7]: "no use""
@@ -42,7 +47,7 @@ According to Figure 3, the connections of the proposed circuit to those of the p
 
 The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
 
-![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/6781ae79-d6f1-4017-b3b2-6c8bffa4a60c)
+![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/cceec450-c637-4903-a580-154c91d32af9)
 
 ## How to test
 
