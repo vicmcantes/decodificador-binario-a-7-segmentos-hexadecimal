@@ -47,8 +47,7 @@ According to Figure 3, the connections of the proposed circuit to those of the p
 
 The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
 
-![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/99a0adce-a2cd-41c7-8f24-7b161d8f71af)
-
+![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/e9cbe006-5fc1-4d77-a546-7768424c53c9)
 
 ## How to test
 
